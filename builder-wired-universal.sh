@@ -13,7 +13,7 @@ cd openwrt; git checkout ${OPENWRT_COMMIT:-4a5c6b90d21522d2663ce2718c973f9e845f2
 
 # 2026-07-06: migrated git01 -> main (git01 frozen; MTK recommends main). Single source of truth.
 git clone --branch main https://github.com/mediatek/mtk-openwrt-feeds mtk-openwrt-feeds
-( cd mtk-openwrt-feeds && git checkout 4e825214deaafc5cdc5457d66a1a828449f07e69 )
+( cd mtk-openwrt-feeds && git checkout ${MTK_COMMIT:-4e825214deaafc5cdc5457d66a1a828449f07e69} )
 
 #\cp -r my_files/feed_revision mtk-openwrt-feeds/autobuild/unified/
 
